@@ -6,8 +6,8 @@ import { User, Download, GraduationCap, BarChart3, MapPin, Briefcase, Code2, Use
 const stats = [
   {
     icon: Briefcase,
-    value: '3+',
-    label: 'Years Experience',
+    value: '6+',
+    label: 'Months Experience',
   },
   {
     icon: Code2,
@@ -54,7 +54,7 @@ export default function About() {
 
             {/* Description Paragraph */}
             <p className="text-slate-600 font-medium text-sm sm:text-base leading-relaxed max-w-xl">
-              I&apos;m a Full-Stack Techno Engineering all-rounder &amp; 3+ Years experienced person and passionate to create full fledge products with end to end engineering. Love to problem-solve using latest tech stack &amp; big solutions.
+              I&apos;m a Full-Stack Techno Engineering all-rounder with 6+ Months of hands-on experience, passionate about creating full-fledged products with end-to-end engineering. Love to problem-solve using latest tech stack &amp; robust solutions.
             </p>
 
             {/* 3-Column College, CGPA, Location Card */}
@@ -94,7 +94,7 @@ export default function About() {
                 <div>
                   <h4 className="text-sm font-bold text-slate-900">Location</h4>
                   <p className="text-xs text-slate-500 font-medium leading-snug mt-0.5">
-                    Tiruppathur, Sivaganga, Tamil Nadu
+                    Murukkapatti, Sivaganga, Tamil Nadu
                   </p>
                 </div>
               </div>
@@ -105,7 +105,9 @@ export default function About() {
             <div>
               <a
                 href="/resume.pdf"
-                download
+                download="Dinesh_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 rounded-xl bg-gradient-to-r from-[#FF5500] to-[#FF6600] px-7 py-3.5 text-sm font-bold text-white shadow-md transition-all hover:bg-[#E04B00] hover:scale-105"
               >
                 <span>Download CV</span>

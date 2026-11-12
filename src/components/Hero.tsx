@@ -5,10 +5,9 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Download, Github, Linkedin, Instagram, Mail } from 'lucide-react';
 
 const socialLinks = [
-  { name: 'GitHub', icon: Github, href: 'https://github.com' },
-  { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com' },
-  { name: 'Instagram', icon: Instagram, href: 'https://instagram.com' },
-  { name: 'Email', icon: Mail, href: 'mailto:dinesh@example.com' },
+  { name: 'GitHub', icon: Github, href: 'https://github.com/vd879007-ship-it' },
+  { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/dinesh-v-2207ba377' },
+  { name: 'Email', icon: Mail, href: 'mailto:dineshcse142@gmail.com' },
 ];
 
 interface HeroProps {
@@ -96,7 +95,9 @@ export default function Hero({ isLoaded = true }: HeroProps) {
             {/* Secondary White Button */}
             <a
               href="/resume.pdf"
-              download
+              download="Dinesh_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white text-slate-800 font-semibold text-sm border border-slate-200 shadow-sm hover:bg-slate-50 transition-all hover:scale-105 active:scale-95"
             >
               <Download className="w-4 h-4 text-slate-600" />

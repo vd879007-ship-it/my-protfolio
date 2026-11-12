@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import FeatureGrid from '@/components/FeatureGrid';
@@ -13,13 +13,27 @@ import Contact from '@/components/Contact';
 import Preloader from '@/components/Preloader';
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    const hasSeenIntro = sessionStorage.getItem('dinesh_portfolio_intro');
+    if (!hasSeenIntro) {
+      setIsLoading(true);
+    }
+  }, []);
+
+  const handlePreloaderComplete = () => {
+    sessionStorage.setItem('dinesh_portfolio_intro', 'seen');
+    setIsLoading(false);
+  };
 
   return (
     <>
-      {/* 9-Scene Cinematic Preloader Animation */}
-      {isLoading && (
-        <Preloader onComplete={() => setIsLoading(false)} />
+      {/* Fast & Snappy Preloader Animation on First Visit */}
+      {mounted && isLoading && (
+        <Preloader onComplete={handlePreloaderComplete} />
       )}
 
       {/* Main Page Content */}

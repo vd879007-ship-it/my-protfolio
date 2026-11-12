@@ -92,7 +92,7 @@ export default function Contact() {
   // Send WhatsApp Booking Message
   const handleWhatsAppBooking = (e: React.FormEvent) => {
     e.preventDefault();
-    const whatsappNumber = '919876543210'; // Replace with user's preferred WhatsApp number
+    const whatsappNumber = '919585575354';
     
     const messageText = 
 `Hello Dinesh! 👋
@@ -149,7 +149,7 @@ I would like to schedule a call with you.
               
               {/* Card 1: Email */}
               <a
-                href="mailto:hello@dinesh.dev"
+                href="mailto:dineshcse142@gmail.com"
                 className="group w-full bg-white rounded-2xl p-4 border border-slate-100 shadow-sm flex items-center justify-between transition-all duration-300 hover:shadow-md hover:border-[#FF5500]/40 hover:-translate-y-1 cursor-pointer"
               >
                 <div className="flex items-center gap-3.5">
@@ -159,7 +159,7 @@ I would like to schedule a call with you.
                   <div className="text-left">
                     <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Email</h4>
                     <p className="text-sm font-extrabold text-slate-900 mt-0.5 group-hover:text-[#FF5500] transition-colors duration-300">
-                      hello@dinesh.dev
+                      dineshcse142@gmail.com
                     </p>
                   </div>
                 </div>
@@ -168,7 +168,7 @@ I would like to schedule a call with you.
 
               {/* Card 2: Phone */}
               <a
-                href="tel:+911234567890"
+                href="tel:+919585575354"
                 className="group w-full bg-white rounded-2xl p-4 border border-slate-100 shadow-sm flex items-center justify-between transition-all duration-300 hover:shadow-md hover:border-[#FF5500]/40 hover:-translate-y-1 cursor-pointer"
               >
                 <div className="flex items-center gap-3.5">
@@ -178,7 +178,7 @@ I would like to schedule a call with you.
                   <div className="text-left">
                     <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Phone</h4>
                     <p className="text-sm font-extrabold text-slate-900 mt-0.5 group-hover:text-[#FF5500] transition-colors duration-300">
-                      +91 12345 67890
+                      +91 95855 75354
                     </p>
                   </div>
                 </div>
@@ -194,7 +194,7 @@ I would like to schedule a call with you.
                   <div className="text-left">
                     <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Location</h4>
                     <p className="text-sm font-extrabold text-slate-900 mt-0.5 group-hover:text-[#FF5500] transition-colors duration-300">
-                      Tamil Nadu, India
+                      Murukkapatti, Sivaganga, Tamil Nadu
                     </p>
                   </div>
                 </div>
@@ -357,7 +357,7 @@ I would like to schedule a call with you.
 
           <div className="flex flex-wrap items-center gap-2.5">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/dinesh-v-2207ba377"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0A66C2] text-white text-xs font-extrabold shadow-sm transition-all hover:scale-105"
@@ -368,7 +368,7 @@ I would like to schedule a call with you.
             </a>
 
             <a
-              href="https://github.com"
+              href="https://github.com/vd879007-ship-it"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 text-white text-xs font-extrabold shadow-sm transition-all hover:scale-105"
@@ -389,7 +389,9 @@ I would like to schedule a call with you.
 
             <a
               href="/resume.pdf"
-              download
+              download="Dinesh_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FF5500] text-white text-xs font-extrabold shadow-sm transition-all hover:scale-105"
             >
               <Download className="w-3.5 h-3.5" />
@@ -646,7 +648,7 @@ I would like to schedule a call with you.
         {/* Right Social Circle Icons */}
         <div className="flex items-center gap-2">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/dinesh-v-2207ba377"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-700 hover:bg-[#FF5500] hover:text-white transition-colors"
@@ -654,7 +656,7 @@ I would like to schedule a call with you.
             <Linkedin className="h-4 w-4" />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/vd879007-ship-it"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-700 hover:bg-[#FF5500] hover:text-white transition-colors"

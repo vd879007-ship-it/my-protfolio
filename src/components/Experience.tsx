@@ -213,8 +213,8 @@ export default function Experience() {
               <p className="text-[11px] font-bold text-slate-500 uppercase mt-0.5">Projects</p>
             </div>
             <div>
-              <h4 className="text-xl font-black text-[#FF5500]">1+</h4>
-              <p className="text-[11px] font-bold text-slate-500 uppercase mt-0.5">Years Exp.</p>
+              <h4 className="text-xl font-black text-[#FF5500]">6+</h4>
+              <p className="text-[11px] font-bold text-slate-500 uppercase mt-0.5">Months Exp.</p>
             </div>
             <div>
               <h4 className="text-xl font-black text-[#FF5500]">100%</h4>
