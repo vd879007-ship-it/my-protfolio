@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { ChevronLeft, ChevronRight, ExternalLink, Github, FolderKanban, Sparkles } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ExternalLink, FolderKanban, Sparkles } from 'lucide-react';
 
 export interface Project {
   id: number;
@@ -296,26 +296,16 @@ export default function Projects() {
                 </div>
               </div>
 
-              {/* Action Buttons (Live Demo & Code) */}
-              <div className="grid grid-cols-2 gap-3 pt-3 border-t border-slate-100">
+              {/* Action Button (View Live Demo) */}
+              <div className="pt-3 border-t border-slate-100">
                 <a
                   href={project.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-1.5 rounded-xl bg-[#FF5500] px-4 py-2.5 text-xs font-extrabold text-white shadow-md transition-all hover:bg-[#E04B00] hover:shadow-lg hover:scale-[1.02] active:scale-95"
+                  className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#FF5500] px-4 py-2.5 text-xs font-extrabold text-white shadow-md transition-all hover:bg-[#E04B00] hover:shadow-lg hover:scale-[1.01] active:scale-95"
                 >
-                  <span>{project.buttonText}</span>
+                  <span>View Live Demo</span>
                   <ExternalLink className="h-3.5 w-3.5" />
-                </a>
-
-                <a
-                  href={project.codeLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-1.5 rounded-xl bg-white border border-slate-200 px-4 py-2.5 text-xs font-bold text-slate-800 shadow-sm transition-all hover:bg-slate-50 hover:border-slate-300 hover:scale-[1.02] active:scale-95"
-                >
-                  <span>Code</span>
-                  <Github className="h-3.5 w-3.5 text-slate-700" />
                 </a>
               </div>
             </div>
