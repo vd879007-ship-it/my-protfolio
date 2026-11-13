@@ -10,6 +10,7 @@ import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
 import Services from '@/components/Services';
 import BlogPreview from '@/components/BlogPreview';
+import FAQ from '@/components/FAQ';
 import Contact from '@/components/Contact';
 import Preloader from '@/components/Preloader';
 
@@ -66,6 +67,9 @@ export default function Home() {
 
           {/* Technical Articles & Blog Section */}
           <BlogPreview />
+
+          {/* Answer Engine Optimization (AEO & GEO) FAQ Knowledge Section */}
+          <FAQ />
 
           {/* Contact Section & Footer */}
           <Contact />

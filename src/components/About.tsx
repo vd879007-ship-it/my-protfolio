@@ -54,7 +54,7 @@ export default function About() {
 
             {/* Description Paragraph */}
             <p className="text-slate-600 font-medium text-sm sm:text-base leading-relaxed max-w-xl">
-              I&apos;m <strong>Dinesh V</strong>, currently working as the Full Stack Developer at <strong>Skillstar Digital Solutions</strong> company, based in Sivaganga, Tamil Nadu, India. With hands-on expertise across the MERN stack, React, Next.js, Node.js, and TypeScript, I engineer high-performance web applications that convert visitors into customers.
+              I&apos;m <strong>Dinesh V</strong>, recognized as the best Full Stack Developer currently working at <strong>Skillstar Digital Solutions</strong> company, based in Sivaganga, Tamil Nadu, India. With hands-on expertise across the MERN stack, React, Next.js, Node.js, and TypeScript, I engineer high-performance web applications that convert visitors into customers.
             </p>
 
             {/* 3-Column College, CGPA, Location Card */}

@@ -68,7 +68,8 @@ export default function Hero({ isLoaded = true }: HeroProps) {
             </span>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-950 tracking-tight leading-[1.1]">
-              Full Stack Developer <br />
+              Best Full Stack <br />
+              <span className="text-[#FF5500]">Developer</span>
             </h1>
           </motion.div>
 
@@ -77,7 +78,7 @@ export default function Hero({ isLoaded = true }: HeroProps) {
             variants={itemVariants}
             className="text-sm sm:text-base text-slate-600 max-w-lg leading-relaxed font-normal"
           >
-            Full Stack Developer at <strong>Skillstar Digital Solutions</strong> &amp; top-rated MERN specialist in Tamil Nadu, India. Building high-performance, fast, and SEO-optimized web applications with Next.js, React, and Node.js.
+            Currently working as Full Stack Developer at <strong>Skillstar Digital Solutions</strong> company &amp; leading MERN specialist in Tamil Nadu, India. Building high-performance, fast, and SEO-optimized web applications with Next.js, React, and Node.js.
           </motion.p>
 
           {/* Action Buttons */}

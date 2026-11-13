@@ -16,10 +16,26 @@ export default function robots(): MetadataRoute.Robots {
   }
 
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-    },
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+      },
+      {
+        userAgent: [
+          'GPTBot',
+          'ChatGPT-User',
+          'Google-Extended',
+          'PerplexityBot',
+          'ClaudeBot',
+          'anthropic-ai',
+          'cohere-ai',
+          'Applebot-Extended',
+          'meta-externalagent',
+        ],
+        allow: '/',
+      },
+    ],
     sitemap: `${PRIMARY_URL}/sitemap.xml`,
   };
 }
