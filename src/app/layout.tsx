@@ -21,6 +21,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(PRIMARY_URL),
+  applicationName: "Dinesh V.",
   title: {
     default: "Dinesh V. | best Full Stack Developer at SkillStar Digital Solutions",
     template: "%s | Dinesh V. - Full Stack Developer",
@@ -74,7 +75,7 @@ export const metadata: Metadata = {
     description:
       "Dinesh V. - Full Stack Developer at SkillStar Digital Solutions, specializing in MERN Stack, React.js, Next.js, Node.js and modern web development in Tamil Nadu, India.",
     url: PRIMARY_URL,
-    siteName: "Dinesh V. Portfolio",
+    siteName: "Dinesh V.",
     locale: "en_US",
     type: "website",
     images: [
@@ -99,17 +100,19 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico?v=3', sizes: 'any' },
-      { url: '/icon-32x32.png?v=3', type: 'image/png', sizes: '32x32' },
-      { url: '/icon-16x16.png?v=3', type: 'image/png', sizes: '16x16' },
-      { url: '/icon-48x48.png?v=3', type: 'image/png', sizes: '48x48' },
-      { url: '/icon-192x192.png?v=3', type: 'image/png', sizes: '192x192' },
-      { url: '/icon.png?v=3', type: 'image/png', sizes: '512x512' },
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon-48x48.png', type: 'image/png', sizes: '48x48' },
+      { url: '/icon-96x96.png', type: 'image/png', sizes: '96x96' },
+      { url: '/icon-144x144.png', type: 'image/png', sizes: '144x144' },
+      { url: '/icon-192x192.png', type: 'image/png', sizes: '192x192' },
+      { url: '/icon-512x512.png', type: 'image/png', sizes: '512x512' },
+      { url: '/icon-32x32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/icon-16x16.png', type: 'image/png', sizes: '16x16' },
     ],
     apple: [
-      { url: '/apple-touch-icon.png?v=3', sizes: '180x180', type: 'image/png' },
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
-    shortcut: '/favicon.ico?v=3',
+    shortcut: '/favicon.ico',
   },
   category: "technology",
 };
@@ -173,7 +176,8 @@ export default function RootLayout({
     "@type": "WebSite",
     "@id": `${PRIMARY_URL}/#website`,
     url: PRIMARY_URL,
-    name: "Dinesh V | Full Stack Developer at Skillstar Digital Solutions",
+    name: "Dinesh V.",
+    alternateName: ["Dinesh V", "Dinesh", "Dinesh Portfolio", "Dinesh V Portfolio"],
     description:
       "Official portfolio and technical blog of Dinesh V, Full Stack Developer at Skillstar Digital Solutions company in Tamil Nadu, India.",
     inLanguage: "en-US",
@@ -232,12 +236,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        {/* Favicon & Touch Icon Links with Cache Busting */}
-        <link rel="icon" href="/favicon.ico?v=3" sizes="any" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/icon-32x32.png?v=3" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/icon-16x16.png?v=3" />
-        <link rel="icon" type="image/png" sizes="48x48" href="/icon-48x48.png?v=3" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3" />
+        {/* Favicon & Touch Icon Links compliant with Googlebot-Image & Web Standards */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/icon-48x48.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/icon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="144x144" href="/icon-144x144.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/icon-512x512.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
         {/* Core Web Vitals Preconnect Hints */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
