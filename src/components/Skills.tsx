@@ -304,7 +304,7 @@ export default function Skills() {
 
           {/* Subtitle Paragraph */}
           <p className="text-slate-600 font-medium text-sm sm:text-base leading-relaxed max-w-xl text-center mb-8">
-            Technologies I work with to build scalable, secure and high-performance digital solutions.
+            Specialized in MERN stack, React, Next.js, Node.js, and modern cloud technologies to build scalable, secure, and high-performance web applications.
           </p>
 
           {/* 3 Category Filter Tabs */}

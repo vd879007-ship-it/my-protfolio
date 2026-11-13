@@ -54,7 +54,7 @@ export default function About() {
 
             {/* Description Paragraph */}
             <p className="text-slate-600 font-medium text-sm sm:text-base leading-relaxed max-w-xl">
-              I&apos;m a Full-Stack Techno Engineering all-rounder with 6+ Months of hands-on experience, passionate about creating full-fledged products with end-to-end engineering. Love to problem-solve using latest tech stack &amp; robust solutions.
+              I&apos;m <strong>Dinesh V</strong>, currently working as the Full Stack Developer at <strong>Skillstar Digital Solutions</strong> company, based in Sivaganga, Tamil Nadu, India. With hands-on expertise across the MERN stack, React, Next.js, Node.js, and TypeScript, I engineer high-performance web applications that convert visitors into customers.
             </p>
 
             {/* 3-Column College, CGPA, Location Card */}
@@ -66,7 +66,7 @@ export default function About() {
                   <GraduationCap className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-slate-900">College</h4>
+                  <h3 className="text-sm font-bold text-slate-900">College</h3>
                   <p className="text-xs text-slate-500 font-medium leading-snug mt-0.5">
                     Bachelor of Engineering in Computer Science
                   </p>
@@ -79,7 +79,7 @@ export default function About() {
                   <BarChart3 className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-slate-900">CGPA</h4>
+                  <h3 className="text-sm font-bold text-slate-900">CGPA</h3>
                   <p className="text-xs text-slate-500 font-medium leading-snug mt-0.5">
                     8.3 (Up to 5th Sem)
                   </p>
@@ -92,7 +92,7 @@ export default function About() {
                   <MapPin className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-slate-900">Location</h4>
+                  <h3 className="text-sm font-bold text-slate-900">Location</h3>
                   <p className="text-xs text-slate-500 font-medium leading-snug mt-0.5">
                     Murukkapatti, Sivaganga, Tamil Nadu
                   </p>
@@ -145,7 +145,7 @@ export default function About() {
             <div className="relative z-10 w-full h-[360px] sm:h-[420px] flex items-end justify-center pointer-events-none">
               <Image
                 src="/dinesh-desk.png"
-                alt="Dinesh - About Me Developer Workspace"
+                alt="Dinesh V - Full Stack Web Developer in Tamil Nadu Workspace"
                 width={550}
                 height={550}
                 priority

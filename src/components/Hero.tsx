@@ -63,13 +63,12 @@ export default function Hero({ isLoaded = true }: HeroProps) {
 
           {/* Main Headline */}
           <motion.div variants={itemVariants} className="space-y-1">
-            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 flex items-center gap-2">
-              Hi, I&apos;m Dinesh <span className="inline-block animate-bounce">👋</span>
-            </h2>
+            <span className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 flex items-center gap-2">
+              Hi, I&apos;m Dinesh V <span className="inline-block animate-bounce">👋</span>
+            </span>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-950 tracking-tight leading-[1.1]">
-              I Build <span className="text-[#FF5500]">Modern Web</span> <br />
-              <span className="text-[#FF5500]">Applications</span>
+              Full Stack Developer <br />
             </h1>
           </motion.div>
 
@@ -78,7 +77,7 @@ export default function Hero({ isLoaded = true }: HeroProps) {
             variants={itemVariants}
             className="text-sm sm:text-base text-slate-600 max-w-lg leading-relaxed font-normal"
           >
-            Passionate Full Stack Web Developer with a creative mindset and a love for building fast, responsive, and user-friendly web applications.
+            Full Stack Developer at <strong>Skillstar Digital Solutions</strong> &amp; top-rated MERN specialist in Tamil Nadu, India. Building high-performance, fast, and SEO-optimized web applications with Next.js, React, and Node.js.
           </motion.p>
 
           {/* Action Buttons */}
@@ -192,7 +191,7 @@ export default function Hero({ isLoaded = true }: HeroProps) {
             >
               <Image
                 src="/image.png"
-                alt="Dinesh - Full Stack Web Developer"
+                alt="Dinesh V - Best Full Stack Developer in Tamil Nadu"
                 width={450}
                 height={550}
                 priority

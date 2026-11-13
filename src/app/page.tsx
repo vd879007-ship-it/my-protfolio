@@ -9,6 +9,7 @@ import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
 import Services from '@/components/Services';
+import BlogPreview from '@/components/BlogPreview';
 import Contact from '@/components/Contact';
 import Preloader from '@/components/Preloader';
 
@@ -62,6 +63,9 @@ export default function Home() {
 
           {/* Services Section */}
           <Services />
+
+          {/* Technical Articles & Blog Section */}
+          <BlogPreview />
 
           {/* Contact Section & Footer */}
           <Contact />

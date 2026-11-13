@@ -157,7 +157,7 @@ I would like to schedule a call with you.
                     <Mail className="h-5 w-5" />
                   </div>
                   <div className="text-left">
-                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Email</h4>
+                    <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">Email</span>
                     <p className="text-sm font-extrabold text-slate-900 mt-0.5 group-hover:text-[#FF5500] transition-colors duration-300">
                       dineshcse142@gmail.com
                     </p>
@@ -176,7 +176,7 @@ I would like to schedule a call with you.
                     <Phone className="h-5 w-5" />
                   </div>
                   <div className="text-left">
-                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Phone</h4>
+                    <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">Phone</span>
                     <p className="text-sm font-extrabold text-slate-900 mt-0.5 group-hover:text-[#FF5500] transition-colors duration-300">
                       +91 95855 75354
                     </p>
@@ -192,7 +192,7 @@ I would like to schedule a call with you.
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div className="text-left">
-                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Location</h4>
+                    <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">Location</span>
                     <p className="text-sm font-extrabold text-slate-900 mt-0.5 group-hover:text-[#FF5500] transition-colors duration-300">
                       Murukkapatti, Sivaganga, Tamil Nadu
                     </p>
@@ -208,7 +208,7 @@ I would like to schedule a call with you.
                     <Clock className="h-5 w-5" />
                   </div>
                   <div className="text-left">
-                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Availability</h4>
+                    <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">Availability</span>
                     <p className="text-sm font-extrabold text-slate-900 mt-0.5 group-hover:text-[#FF5500] transition-colors duration-300">
                       Mon - Sat (9AM - 8PM)
                     </p>
@@ -247,7 +247,7 @@ I would like to schedule a call with you.
               {submitted ? (
                 <div className="bg-[#FFF5EF] border border-[#FFD8C2] rounded-2xl p-6 text-center text-[#FF5500] flex flex-col items-center gap-2">
                   <CheckCircle2 className="w-10 h-10" />
-                  <h4 className="text-lg font-extrabold">Message Sent Successfully!</h4>
+                  <p className="text-lg font-extrabold">Message Sent Successfully!</p>
                   <p className="text-xs text-slate-600 font-medium">
                     Thank you for reaching out, Dinesh will respond to your message shortly.
                   </p>
@@ -351,7 +351,7 @@ I would like to schedule a call with you.
         {/* Quick Connect Bar */}
         <div className="bg-white rounded-2xl p-5 border border-slate-100 shadow-md flex flex-col md:flex-row items-center justify-between gap-4 mb-10">
           <div className="text-left">
-            <h4 className="text-sm font-extrabold text-slate-900">Quick Connect</h4>
+            <h3 className="text-sm font-extrabold text-slate-900">Quick Connect</h3>
             <p className="text-xs font-semibold text-slate-500 mt-0.5">Reach me on my favorite platforms</p>
           </div>
 
@@ -627,48 +627,69 @@ I would like to schedule a call with you.
       </AnimatePresence>
 
       {/* Footer */}
-      <footer className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4">
-        {/* Left Logo */}
-        <a href="#home" className="flex items-center">
-          <Image
-            src="/dinesh-logo.png"
-            alt="Dinesh Logo"
-            width={180}
-            height={45}
-            className="h-9 w-auto object-contain"
-          />
-        </a>
+      <footer className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-slate-200/80 flex flex-col gap-6">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          {/* Left Logo */}
+          <a href="/#home" className="flex items-center">
+            <Image
+              src="/dinesh-logo.png"
+              alt="Dinesh V - Best Full Stack Developer in Tamil Nadu Logo"
+              width={180}
+              height={45}
+              className="h-9 w-auto object-contain"
+            />
+          </a>
+
+          {/* Quick Internal Navigation Links */}
+          <nav aria-label="Footer Navigation" className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs font-bold text-slate-600">
+            <a href="/#home" className="hover:text-[#FF5500] transition-colors">Home</a>
+            <a href="/#about" className="hover:text-[#FF5500] transition-colors">About</a>
+            <a href="/#skills" className="hover:text-[#FF5500] transition-colors">Skills</a>
+            <a href="/#projects" className="hover:text-[#FF5500] transition-colors">Projects</a>
+            <a href="/#services" className="hover:text-[#FF5500] transition-colors">Services</a>
+            <a href="/blog" className="hover:text-[#FF5500] transition-colors text-[#FF5500]">Technical Blog</a>
+            <a href="/#contact" className="hover:text-[#FF5500] transition-colors">Contact</a>
+          </nav>
+
+          {/* Right Social Circle Icons */}
+          <div className="flex items-center gap-2">
+            <a
+              href="https://www.linkedin.com/in/dinesh-v-2207ba377"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Dinesh V LinkedIn Profile"
+              className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-700 hover:bg-[#FF5500] hover:text-white transition-colors"
+            >
+              <Linkedin className="h-4 w-4" />
+            </a>
+            <a
+              href="https://github.com/vd879007-ship-it"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Dinesh V GitHub Profile"
+              className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-700 hover:bg-[#FF5500] hover:text-white transition-colors"
+            >
+              <Github className="h-4 w-4" />
+            </a>
+            <a
+              href="/#home"
+              aria-label="Dinesh V Portfolio Website"
+              className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-700 hover:bg-[#FF5500] hover:text-white transition-colors"
+            >
+              <Globe className="h-4 w-4" />
+            </a>
+          </div>
+        </div>
 
         {/* Center Copyright */}
-        <p className="text-xs text-slate-500 font-semibold flex items-center justify-center gap-1">
-          © {new Date().getFullYear()} Dinesh | Full Stack Developer | Built with{' '}
-          <Heart className="w-3.5 h-3.5 text-[#FF5500] fill-[#FF5500] inline" />
-        </p>
-
-        {/* Right Social Circle Icons */}
-        <div className="flex items-center gap-2">
-          <a
-            href="https://www.linkedin.com/in/dinesh-v-2207ba377"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-700 hover:bg-[#FF5500] hover:text-white transition-colors"
-          >
-            <Linkedin className="h-4 w-4" />
-          </a>
-          <a
-            href="https://github.com/vd879007-ship-it"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-700 hover:bg-[#FF5500] hover:text-white transition-colors"
-          >
-            <Github className="h-4 w-4" />
-          </a>
-          <a
-            href="#home"
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-700 hover:bg-[#FF5500] hover:text-white transition-colors"
-          >
-            <Globe className="h-4 w-4" />
-          </a>
+        <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500 font-medium text-center">
+          <p>
+            © {new Date().getFullYear()} Dinesh V • Full Stack Developer in Tamil Nadu, India.
+          </p>
+          <p className="flex items-center justify-center gap-1">
+            Built with React, Next.js &amp; Tailwind CSS{' '}
+            <Heart className="w-3.5 h-3.5 text-[#FF5500] fill-[#FF5500] inline" />
+          </p>
         </div>
       </footer>
     </section>

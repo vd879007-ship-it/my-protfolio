@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Briefcase, Calendar, Trophy } from 'lucide-react';
 
 const experiences = [
@@ -35,11 +36,11 @@ const experiences = [
   },
   {
     step: '4',
-    company: 'Skillstrar Digital Solutions',
+    company: 'Skillstar Digital Solutions',
     duration: 'Now',
     role: 'Full Stack Developer',
     description:
-      'Currently working as a Full Stack Developer, building scalable web applications and delivering impactful digital solutions.',
+      'Currently working as Full Stack Developer at Skillstar Digital Solutions company, building scalable web applications and delivering high-performance digital solutions.',
     logoType: 'skillstar',
     isCurrent: true,
   },
@@ -49,37 +50,52 @@ function CompanyLogo({ type }: { type: string }) {
   switch (type) {
     case 'sgs':
       return (
-        <div className="flex items-center gap-1.5 text-[#1E293B]">
-          <span className="text-2xl font-black tracking-tighter text-[#1E3A8A]">
-            SGS
-          </span>
+        <div className="flex items-center justify-center">
+          <Image
+            src="/sgs-logo.png"
+            alt="South Graps Solution Logo"
+            width={95}
+            height={40}
+            className="h-9 sm:h-10 w-auto object-contain hover:scale-105 transition-transform"
+          />
         </div>
       );
     case 'visual':
       return (
-        <div className="flex items-center gap-2">
-          <div className="h-6 w-6 text-[#0284C7] font-black text-xl flex items-center justify-center">
-            V
-          </div>
-          <div className="text-left leading-none">
-            <span className="text-sm font-extrabold text-slate-900 block">Visual</span>
-            <span className="text-[9px] font-bold text-slate-400 tracking-wider uppercase">CARRIER SOLUTION</span>
-          </div>
+        <div className="flex items-center justify-center">
+          <Image
+            src="/visual-logo.png"
+            alt="Visual Career Solution Logo"
+            width={100}
+            height={38}
+            className="h-9 sm:h-10 w-auto object-contain hover:scale-105 transition-transform"
+          />
         </div>
       );
     case 'mseed':
       return (
-        <div className="flex items-center gap-1.5">
-          <span className="text-lg">📖</span>
-          <span className="text-lg font-black text-[#1E293B]">MSE<span className="text-[#16A34A]">ED</span></span>
+        <div className="flex items-center justify-center">
+          <Image
+            src="/mseed-logo.png"
+            alt="MSEED Logo"
+            width={110}
+            height={32}
+            className="h-8 sm:h-9 w-auto object-contain hover:scale-105 transition-transform"
+          />
         </div>
       );
     case 'skillstar':
       return (
         <div className="flex items-center gap-2">
-          <span className="text-lg text-[#FF5500]">💥</span>
+          <Image
+            src="/skillstar-icon.png"
+            alt="Skillstar Digital Solutions Logo"
+            width={38}
+            height={32}
+            className="h-8 sm:h-9 w-auto object-contain drop-shadow-xs hover:scale-105 transition-transform"
+          />
           <div className="text-left leading-none">
-            <span className="text-sm font-extrabold text-slate-900 block">SKILLSTRAR</span>
+            <span className="text-sm font-extrabold text-slate-900 block">SKILLSTAR</span>
             <span className="text-[9px] font-bold text-slate-400 tracking-wider uppercase">DIGITAL SOLUTIONS</span>
           </div>
         </div>

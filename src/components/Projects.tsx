@@ -21,7 +21,7 @@ const projects: Project[] = [
     id: 1,
     title: 'Shanmugam Industries – Manufacturing Website',
     category: 'Corporate & Industry',
-    description: 'Premier manufacturer of high-performance automotive body fillers, metal pastes, and polyester putty refinish solutions engineered for flawless professional finishing.',
+    description: 'Premier manufacturer portal for high-performance automotive body fillers, metal pastes, and polyester putty refinish solutions engineered with Next.js and modern industrial UI by Dinesh V.',
     image: '/projects/shanmugam.png',
     tags: ['Automotive Refinish', 'Manufacturing', 'Industrial UI', 'Next.js'],
     liveLink: 'https://shanmugam-industries-final.vercel.app/',
@@ -32,7 +32,7 @@ const projects: Project[] = [
     id: 2,
     title: 'Fundun Holidays – Travel & Tourism Portal',
     category: 'Travel & Services',
-    description: 'Comprehensive South India travel platform showcasing luxury packages to Ooty, Munnar, Kodaikanal, Coorg & Goa with custom booking and holiday inquiry.',
+    description: 'Comprehensive South India travel platform showcasing luxury packages to Ooty, Munnar, Kodaikanal, Coorg & Goa with responsive booking and custom inquiry architecture.',
     image: '/projects/fundun-holidays.png',
     tags: ['Tours & Travels', 'Holiday Packages', 'South India', 'Interactive UI'],
     liveLink: 'https://vd879007-ship-it.github.io/fundun-holidays/',
@@ -43,7 +43,7 @@ const projects: Project[] = [
     id: 3,
     title: 'MSEED – Learning Management System',
     category: 'Education & Health',
-    description: 'Next-generation learning management portal empowering students through industry-aligned skill development, structured modules, and interactive portals.',
+    description: 'Next-generation learning management portal empowering students through industry-aligned skill development, structured modules, and interactive portals built with clean MERN stack architecture.',
     image: '/projects/mseed.png',
     tags: ['LMS Platform', 'E-Learning', 'Student Portal', 'Skill Development'],
     liveLink: 'https://vd879007-ship-it.github.io/MSEED/',
@@ -54,7 +54,7 @@ const projects: Project[] = [
     id: 4,
     title: 'ROKEA by RK – Luxury Sarees & Jewellery',
     category: 'E-Commerce',
-    description: 'Curated e-commerce boutique for handcrafted heritage sarees, Dubion silk, and exclusive jewelry collections with rich catalog visuals and smooth user experience.',
+    description: 'Curated e-commerce boutique for handcrafted heritage sarees, Dubion silk, and exclusive jewelry collections with rich catalog visuals, real-time cart state, and smooth user checkout.',
     image: '/projects/rokea.png',
     tags: ['E-Commerce', 'Luxury Fashion', 'Online Store', 'Modern Cart UI'],
     liveLink: 'https://rokea-by-rk.vercel.app/',
@@ -65,7 +65,7 @@ const projects: Project[] = [
     id: 5,
     title: 'Kovai Fertility & Health Center',
     category: 'Education & Health',
-    description: 'Top-rated natural fertility and sexual wellness clinic portal with 30+ years of clinical experience, featuring Ayurvedic treatments and direct consultation booking.',
+    description: 'Natural fertility and sexual wellness clinic portal with 30+ years of clinical trust, featuring Ayurvedic treatments, responsive medical UI, and direct consultation booking.',
     image: '/projects/fertility-center.png',
     tags: ['Hospital Website', 'Ayurveda', 'Doctor Consultation', 'Medical Portal'],
     liveLink: 'https://fertility-center.vercel.app/',
@@ -76,7 +76,7 @@ const projects: Project[] = [
     id: 6,
     title: 'Aero Kinetic – Performance Footwear Store',
     category: 'E-Commerce',
-    description: 'Modern shoe shop and e-commerce portal featuring athletic sneakers, next-gen performance footwear, interactive product showcase, and sleek cart interface.',
+    description: 'Modern shoe shop and e-commerce portal featuring athletic sneakers, next-gen performance footwear, interactive product filtering, and sleek responsive shopping interface.',
     image: '/projects/shoes-shop.png',
     tags: ['Shoe Shop', 'Athletic Footwear', 'E-Commerce', 'Modern UI'],
     liveLink: 'https://shoes-shop-azure.vercel.app/',
@@ -87,7 +87,7 @@ const projects: Project[] = [
     id: 7,
     title: 'EssEmm Corporation – Kitchen & Furniture Machines',
     category: 'Corporate & Industry',
-    description: 'Transforming commercial kitchens and facilities since 1997 with premium Cosmos commercial equipment, multi-utility grinders, automatic chapathi machines, and cook-woks.',
+    description: 'Industrial food machinery portal transforming commercial kitchens since 1997 with premium Cosmos commercial equipment, multi-utility grinders, and automated processing solutions.',
     image: '/projects/essemm.png',
     tags: ['Commercial Machines', 'Industrial Equipment', 'Food Processing', 'Kitchen Solutions'],
     liveLink: 'https://essemm-furniture.vercel.app/',
@@ -98,7 +98,7 @@ const projects: Project[] = [
     id: 8,
     title: 'SABOL Water Solutions – Delivery Service',
     category: 'Corporate & Industry',
-    description: 'Packaged drinking water delivery service providing pure water cans and bottles for residential homes, corporate offices, businesses, hotels, and events.',
+    description: 'Packaged drinking water delivery service providing pure water cans and bottles for residential homes, corporate offices, businesses, hotels, and events with WhatsApp order routing.',
     image: '/projects/sabol-water.png',
     tags: ['Water Company', 'Online Ordering', 'Delivery Service', 'Corporate Supply'],
     liveLink: 'https://sabol-water.vercel.app/',
@@ -109,7 +109,7 @@ const projects: Project[] = [
     id: 9,
     title: 'Titan Fitness – Premium Gym Website',
     category: 'Travel & Services',
-    description: 'High-energy fitness club platform featuring certified personal trainers, state-of-the-art workout equipment, custom training programs, and membership plans.',
+    description: 'High-energy fitness club platform featuring certified personal trainers, workout equipment catalogs, custom training programs, and interactive membership plans.',
     image: '/projects/titan-fitness.png',
     tags: ['Gym & Fitness', 'Trainer Programs', 'Membership Plans', 'Workout Schedules'],
     liveLink: 'https://skillstardevsrc-sys.github.io/gym-website/',
@@ -253,8 +253,9 @@ export default function Projects() {
                 <div className="relative w-full h-[220px] rounded-2xl overflow-hidden mb-5 bg-slate-900 border border-slate-200/60 shadow-inner group-hover:shadow-md transition-shadow">
                   <Image
                     src={project.image}
-                    alt={project.title}
+                    alt={`${project.title} - Web Development Project by Dinesh V Full Stack Developer`}
                     fill
+                    loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                   />

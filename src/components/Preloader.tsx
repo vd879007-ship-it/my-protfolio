@@ -106,7 +106,7 @@ export default function Preloader({ onComplete }: { onComplete: () => void }) {
                   <div className="relative flex items-center justify-center h-20 sm:h-24">
                     <Image
                       src="/d-icon.png"
-                      alt="Dinesh Logo"
+                      alt="Dinesh V - Full Stack Developer Logo"
                       width={100}
                       height={100}
                       priority
@@ -121,12 +121,15 @@ export default function Preloader({ onComplete }: { onComplete: () => void }) {
 
                 {/* Name & Subtitle Reveal */}
                 <div className="flex flex-col items-center">
-                  <h1 className="text-3xl sm:text-4xl font-black tracking-tight flex items-center justify-center">
+                  <div
+                    className="text-3xl sm:text-4xl font-black tracking-tight flex items-center justify-center"
+                    aria-hidden="true"
+                  >
                     <span className="text-[#0F2042]">D</span>
                     <span className="bg-gradient-to-r from-[#FF5500] via-[#FF6600] to-[#FF8800] bg-clip-text text-transparent">
                       inesh
                     </span>
-                  </h1>
+                  </div>
 
                   <div className="flex items-center gap-2.5 mt-1.5">
                     <span className="w-6 h-[1.5px] bg-[#FF5500]" />

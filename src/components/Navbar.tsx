@@ -5,12 +5,13 @@ import Image from 'next/image';
 import { User, ArrowRight } from 'lucide-react';
 
 const navItems = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Services', href: '#services' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Home', href: '/#home' },
+  { name: 'About', href: '/#about' },
+  { name: 'Skills', href: '/#skills' },
+  { name: 'Projects', href: '/#projects' },
+  { name: 'Services', href: '/#services' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'Contact', href: '/#contact' },
 ];
 
 export default function Navbar() {
@@ -21,10 +22,10 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
         
         {/* Developer Logo (Left): Exact Custom Logo from image copy 2.png */}
-        <a href="#home" className="flex items-center group">
+        <a href="/#home" className="flex items-center group">
           <Image
             src="/dinesh-logo.png"
-            alt="Dinesh - Full Stack Developer Logo"
+            alt="Dinesh V - Best Full Stack Developer in Tamil Nadu Logo"
             width={260}
             height={65}
             priority
@@ -56,7 +57,7 @@ export default function Navbar() {
 
         {/* Right CTA Button: Orange "Hire Me! →" */}
         <a
-          href="#contact"
+          href="/#contact"
           className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-[#FF5500] to-[#FF6600] px-5 py-2.5 text-xs font-extrabold text-white shadow-md transition-all duration-200 hover:shadow-lg hover:scale-105 active:scale-95"
         >
           <User className="h-4 w-4" />

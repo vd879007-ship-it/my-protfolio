@@ -148,9 +148,9 @@ export default function Services() {
               <Send className="h-5 w-5" />
             </div>
             <div>
-              <h4 className="text-base font-black text-slate-900 leading-snug">
+              <h3 className="text-base font-black text-slate-900 leading-snug">
                 Have a Project in Mind?
-              </h4>
+              </h3>
               <p className="text-xs font-semibold text-slate-600 mt-0.5">
                 Let&apos;s work together to bring your ideas to life.
               </p>
